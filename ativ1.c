@@ -1,23 +1,27 @@
+/*
+ ============================================================================
+ Name        : Projeto_helloworld.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
+#define PI 3.14159
 
-int main (void){
-   int contpar = 0, contimpar = 0, num = 500;
- while(num != 0){
-        printf("Entre com um nú..mero para encerrar digite 0:");
-        scanf("%d", &num);
-        if(num != 0){
-            if(num % 2 == 0){
-                contpar = contpar + 1;
-            }
-            else{
-                contimpar = contimpar + 1;
-            }
+int main (void) {
 
-        }
-    }
-   
-    
-printf("A quantidade de números pares é:%d\n", contpar);
-printf("A quantidade de números impares é:%d",contimpar);
+	int idade = 18;
+	const int MAX_NUM = 100;
+
+	printf("variável int comum = %d/n", idade);
+	printf("variável int constante = %d/n", MAX_NUM);
+	printf("variavel constante = %f/n", PI);
+
+	//MAX_NUM = 99;
+
+	return EXIT_SUCCESS;
 }
